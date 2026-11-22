@@ -1,0 +1,10 @@
+ultralytics==8.3.228
+opencv-python-headless>=4.9
+numpy>=1.26
+streamlit>=1.50
+requests>=2.31
+pyyaml>=6.0
+# export ONNX (scripts/evaluate_export.py --onnx)
+onnx>=1.12.0,<=1.19.1
+onnxslim>=0.1.71
+pytest

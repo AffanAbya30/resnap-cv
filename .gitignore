@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+runs/
+.streamlit/secrets.toml
+yolov8*.pt
+data/recipes.json.gz
