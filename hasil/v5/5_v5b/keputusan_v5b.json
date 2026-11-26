@@ -1,0 +1,248 @@
+{
+  "diterima": false,
+  "syarat": {
+    "1_fp_negatif_turun_separuh": true,
+    "2_val_map50_95_tidak_turun": true,
+    "3_tidak_ada_kelas_val_anjlok": true,
+    "4_holdout_tidak_turun": false,
+    "5_fit_seimbang_gap_terjaga": true
+  },
+  "fp_val_negatif": {
+    "v4b": {
+      "foto": 257,
+      "foto_dengan_deteksi": 42,
+      "persen": 16.3,
+      "deteksi_total": 281,
+      "kelas": {
+        "garlic": 110,
+        "onion": 68,
+        "shallot": 34,
+        "egg": 33,
+        "mushroom": 14,
+        "cabbage": 12
+      }
+    },
+    "v5a": {
+      "foto": 257,
+      "foto_dengan_deteksi": 71,
+      "persen": 27.6,
+      "deteksi_total": 906,
+      "kelas": {
+        "garlic": 615,
+        "egg": 149,
+        "onion": 48,
+        "shallot": 37,
+        "mushroom": 13,
+        "cucumber": 12
+      }
+    },
+    "v5b": {
+      "foto": 257,
+      "foto_dengan_deteksi": 9,
+      "persen": 3.5,
+      "deteksi_total": 10,
+      "kelas": {
+        "egg": 3,
+        "mushroom": 2,
+        "shallot": 2,
+        "cabbage": 1,
+        "cucumber": 1,
+        "galangal": 1
+      }
+    }
+  },
+  "gap": {
+    "v4b": 0.2739,
+    "v5a": 0.2799,
+    "v5b": 0.2596
+  },
+  "diagnosa": {
+    "vonis": "seimbang",
+    "gap_train_val": 0.2596,
+    "temuan": [
+      "mAP val sudah mendatar di akhir training (konvergen).",
+      "Loss val tidak naik berarti (naik 2% dari minimum).",
+      "Gap mAP50-95 train-val 0.260 dalam batas 0.300."
+    ]
+  },
+  "evaluasi": {
+    "v4b_val": {
+      "split": "val",
+      "images": 1069,
+      "precision": 0.7168100397775609,
+      "recall": 0.6567839075270416,
+      "f1": 0.6854854009855655,
+      "f1_macro": 0.6744171446328389,
+      "mAP50": 0.6940321848058008,
+      "mAP75": 0.5343528092276305,
+      "mAP50_95": 0.4812551058837267
+    },
+    "v4b_train_subset": {
+      "split": "val",
+      "images": 600,
+      "precision": 0.916802463124325,
+      "recall": 0.9065442407255342,
+      "f1": 0.9116444953376002,
+      "f1_macro": 0.9060047210150086,
+      "mAP50": 0.9548717690239952,
+      "mAP75": 0.8845855259233276,
+      "mAP50_95": 0.7551917602684846
+    },
+    "v4b_holdout_oi": {
+      "split": "val",
+      "images": 78,
+      "precision": 0.7097541596683543,
+      "recall": 0.43746641035884054,
+      "f1": 0.5412971360163287,
+      "f1_macro": 0.43896091002604276,
+      "mAP50": 0.42308381528541866,
+      "mAP75": 0.3164780533258383,
+      "mAP50_95": 0.2974530971074172
+    },
+    "v4b_holdout_rimpang": {
+      "split": "val",
+      "images": 525,
+      "precision": 0.3110427052016678,
+      "recall": 0.22231959753227795,
+      "f1": 0.2593017492287224,
+      "f1_macro": 0.2538793960755897,
+      "mAP50": 0.23173927487993887,
+      "mAP75": 0.1832240590809441,
+      "mAP50_95": 0.16106811974967655
+    },
+    "v4b_val_relz": {
+      "split": "val",
+      "images": 329,
+      "precision": 0.37105762114820284,
+      "recall": 0.5915778713656217,
+      "f1": 0.4560593898311779,
+      "f1_macro": 0.25070279699183085,
+      "mAP50": 0.3717208332044602,
+      "mAP75": 0.19714487911723308,
+      "mAP50_95": 0.18826954430699014
+    },
+    "v5a_val": {
+      "split": "val",
+      "images": 1069,
+      "precision": 0.7056624518690678,
+      "recall": 0.6817358509700626,
+      "f1": 0.6934928363947419,
+      "f1_macro": 0.6819387540417751,
+      "mAP50": 0.6973140415078246,
+      "mAP75": 0.5563596736420293,
+      "mAP50_95": 0.4895625172678518
+    },
+    "v5a_train_subset": {
+      "split": "val",
+      "images": 600,
+      "precision": 0.9150986058377445,
+      "recall": 0.9303875410271715,
+      "f1": 0.9226797428191061,
+      "f1_macro": 0.9207609284936216,
+      "mAP50": 0.9625404207556626,
+      "mAP75": 0.8898232803110072,
+      "mAP50_95": 0.769443754685
+    },
+    "v5a_holdout_oi": {
+      "split": "val",
+      "images": 78,
+      "precision": 0.8035219438623621,
+      "recall": 0.43520009219377886,
+      "f1": 0.5646025724414832,
+      "f1_macro": 0.4857799052459034,
+      "mAP50": 0.4998383500149807,
+      "mAP75": 0.4264494294924285,
+      "mAP50_95": 0.3799721264394567
+    },
+    "v5a_holdout_rimpang": {
+      "split": "val",
+      "images": 525,
+      "precision": 0.862418505508591,
+      "recall": 0.7502647278120266,
+      "f1": 0.8024417590839047,
+      "f1_macro": 0.7948074139571623,
+      "mAP50": 0.8446613475067849,
+      "mAP75": 0.7701068208562999,
+      "mAP50_95": 0.7130188684164425
+    },
+    "v5a_val_relz": {
+      "split": "val",
+      "images": 329,
+      "precision": 0.5071445652084855,
+      "recall": 0.5046836343660931,
+      "f1": 0.5059111070951438,
+      "f1_macro": 0.3147444116908347,
+      "mAP50": 0.5278531513277427,
+      "mAP75": 0.3313006134502591,
+      "mAP50_95": 0.29586254634278564
+    },
+    "v5b_val": {
+      "split": "val",
+      "images": 1069,
+      "precision": 0.7238550640674872,
+      "recall": 0.6690656015587251,
+      "f1": 0.6953827821398776,
+      "f1_macro": 0.6793612408048655,
+      "mAP50": 0.7132753601371832,
+      "mAP75": 0.5577860600294456,
+      "mAP50_95": 0.4974297043144181
+    },
+    "v5b_train_subset": {
+      "split": "val",
+      "images": 600,
+      "precision": 0.9073850075610774,
+      "recall": 0.9091966651372256,
+      "f1": 0.908289932975738,
+      "f1_macro": 0.9052097878906722,
+      "mAP50": 0.9529618367054496,
+      "mAP75": 0.8845643709943559,
+      "mAP50_95": 0.7569975100017661
+    },
+    "v5b_holdout_oi": {
+      "split": "val",
+      "images": 78,
+      "precision": 0.6949373115007642,
+      "recall": 0.4271530524496546,
+      "f1": 0.5290921362583316,
+      "f1_macro": 0.43123925351051134,
+      "mAP50": 0.41355281204470107,
+      "mAP75": 0.3272753444546078,
+      "mAP50_95": 0.2998913419407704
+    },
+    "v5b_holdout_rimpang": {
+      "split": "val",
+      "images": 525,
+      "precision": 0.8666697150598784,
+      "recall": 0.7449133930851439,
+      "f1": 0.8011921629936737,
+      "f1_macro": 0.794970669468667,
+      "mAP50": 0.8447491526687645,
+      "mAP75": 0.7698412624929388,
+      "mAP50_95": 0.7072464215161841
+    },
+    "v5b_val_relz": {
+      "split": "val",
+      "images": 329,
+      "precision": 0.5979596880279063,
+      "recall": 0.7604964694310674,
+      "f1": 0.6695044652128332,
+      "f1_macro": 0.6268367859739872,
+      "mAP50": 0.6934621875876815,
+      "mAP75": 0.6025470427412136,
+      "mAP50_95": 0.5014615909875709
+    }
+  },
+  "log_data": {
+    "val relz: kembar dengan data lain": 126,
+    "val relz: salinan augmentasi": 1,
+    "train relz: kembar dengan data lain": 569,
+    "train relz: salinan augmentasi": 667,
+    "val relz: bahan lain tak berlabel": 24,
+    "train relz: bahan lain tak berlabel": 159
+  },
+  "jumlah": {
+    "tambahan_train": 1038,
+    "val_relz": 329,
+    "val_negatif": 257
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "uji_dugaan_tumpukan_val": {
+    "deteksi_palsu": 1424,
+    "di_dalam_kotak_sekelas": 287,
+    "per_kelas_lemah": {
+      "turmeric": {
+        "palsu": 11,
+        "di_dalam_kotak_sekelas": 3,
+        "persen_di_dalam": 27.3
+      },
+      "galangal": {
+        "palsu": 10,
+        "di_dalam_kotak_sekelas": 2,
+        "persen_di_dalam": 20.0
+      },
+      "shrimp": {
+        "palsu": 19,
+        "di_dalam_kotak_sekelas": 9,
+        "persen_di_dalam": 47.4
+      },
+      "mushroom": {
+        "palsu": 96,
+        "di_dalam_kotak_sekelas": 51,
+        "persen_di_dalam": 53.1
+      },
+      "cauliflower": {
+        "palsu": 21,
+        "di_dalam_kotak_sekelas": 12,
+        "persen_di_dalam": 57.1
+      },
+      "potato": {
+        "palsu": 11,
+        "di_dalam_kotak_sekelas": 0,
+        "persen_di_dalam": 0.0
+      },
+      "broccoli": {
+        "palsu": 73,
+        "di_dalam_kotak_sekelas": 47,
+        "persen_di_dalam": 64.4
+      }
+    }
+  },
+  "kotak_tumpukan": {
+    "val": 54,
+    "train": 171,
+    "train_per_kelas": {
+      "shrimp": 51,
+      "mushroom": 24,
+      "carrot": 15,
+      "chili": 8,
+      "chicken": 7,
+      "broccoli": 7,
+      "garlic": 6,
+      "cucumber": 6,
+      "potato": 6,
+      "galangal": 5,
+      "turmeric": 5,
+      "cabbage": 5,
+      "eggplant": 4,
+      "fish": 3,
+      "tempeh": 3,
+      "tomato": 3,
+      "cauliflower": 3,
+      "onion": 2,
+      "lemongrass": 2,
+      "corn": 2,
+      "tofu": 1,
+      "shallot": 1,
+      "green_onion": 1,
+      "ginger": 1
+    }
+  },
+  "rimpang_unduh": {
+    "soda": {
+      "status": "ok",
+      "versi": 6,
+      "versi_tersedia": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "rival": {
+      "status": "ok",
+      "versi": 1,
+      "versi_tersedia": [
+        1
+      ]
+    },
+    "ginger": {
+      "status": "tidak ada versi yang bisa diunduh"
+    },
+    "rimpang10": {
+      "status": "ok",
+      "versi": 3,
+      "versi_tersedia": [
+        1,
+        2,
+        3
+      ]
+    },
+    "ayush": {
+      "status": "ok",
+      "versi": 2,
+      "versi_tersedia": [
+        1,
+        2
+      ]
+    }
+  },
+  "rimpang_statistik": {
+    "soda": {
+      "foto": 2968,
+      "per_split": {
+        "train": 2593,
+        "valid": 240,
+        "test": 135
+      },
+      "kelas_asli": [
+        "jahe",
+        "kencur",
+        "ketumbar",
+        "kunyit",
+        "lengkuas",
+        "merica"
+      ],
+      "pemetaan": {
+        "0": "ginger",
+        "1": "negatif",
+        "2": "negatif",
+        "3": "turmeric",
+        "4": "galangal",
+        "5": "negatif"
+      },
+      "kotak_per_kelas": {
+        "turmeric": 1230,
+        "ginger": 1040,
+        "galangal": 1237,
+        "negatif": 1588
+      },
+      "kotak_per_foto_median": 1.0,
+      "kotak_raksasa_persen": 1.0,
+      "foto_unik_kira2": 2142,
+      "kembar_dengan_resnap": 8,
+      "bahan_lain_tak_berlabel_di_300_foto": {
+        "chicken": 1,
+        "potato": 1
+      },
+      "foto_dengan_bahan_lain_persen": 0.7
+    },
+    "rival": {
+      "foto": 5200,
+      "per_split": {
+        "train": 4800,
+        "test": 400
+      },
+      "kelas_asli": [
+        "adas",
+        "andaliman",
+        "cengkeh",
+        "jahe",
+        "kapulaga",
+        "kayu-manis",
+        "kunyit",
+        "lada",
+        "lengkuas",
+        "pala"
+      ],
+      "pemetaan": {
+        "0": "negatif",
+        "1": "negatif",
+        "2": "negatif",
+        "3": "ginger",
+        "4": "negatif",
+        "5": "negatif",
+        "6": "turmeric",
+        "7": "negatif",
+        "8": "galangal",
+        "9": "negatif"
+      },
+      "kotak_per_kelas": {
+        "negatif": 4289,
+        "ginger": 597,
+        "turmeric": 597,
+        "galangal": 537
+      },
+      "kotak_per_foto_median": 1.0,
+      "kotak_raksasa_persen": 63.3,
+      "foto_unik_kira2": 5036,
+      "kembar_dengan_resnap": 133,
+      "bahan_lain_tak_berlabel_di_300_foto": {
+        "mushroom": 3,
+        "garlic": 2,
+        "egg": 2,
+        "onion": 1,
+        "corn": 1,
+        "cabbage": 1,
+        "broccoli": 1
+      },
+      "foto_dengan_bahan_lain_persen": 3.7
+    },
+    "rimpang10": {
+      "foto": 2345,
+      "per_split": {
+        "train": 2049,
+        "valid": 197,
+        "test": 99
+      },
+      "kelas_asli": [
+        "jahe",
+        "kencur",
+        "kunyit",
+        "lempuyang",
+        "lengkuas",
+        "temugiring",
+        "temuireng",
+        "temukunci",
+        "temulawak",
+        "temumangga"
+      ],
+      "pemetaan": {
+        "0": "ginger",
+        "1": "negatif",
+        "2": "turmeric",
+        "3": "negatif",
+        "4": "galangal",
+        "5": "negatif",
+        "6": "negatif",
+        "7": "negatif",
+        "8": "negatif",
+        "9": "negatif"
+      },
+      "kotak_per_kelas": {
+        "ginger": 245,
+        "negatif": 3936,
+        "galangal": 634,
+        "turmeric": 738
+      },
+      "kotak_per_foto_median": 1.0,
+      "kotak_raksasa_persen": 20.5,
+      "foto_unik_kira2": 1004,
+      "kembar_dengan_resnap": 405,
+      "bahan_lain_tak_berlabel_di_300_foto": {},
+      "foto_dengan_bahan_lain_persen": 0.0
+    },
+    "ayush": {
+      "foto": 1440,
+      "per_split": {
+        "train": 1260,
+        "valid": 120,
+        "test": 60
+      },
+      "kelas_asli": [
+        "Ginger",
+        "Turmeric",
+        "Wild_turmeric"
+      ],
+      "pemetaan": {
+        "0": "ginger",
+        "1": "turmeric",
+        "2": "AMBIGU"
+      },
+      "kotak_per_kelas": {
+        "AMBIGU": 1666,
+        "turmeric": 480,
+        "ginger": 533
+      },
+      "kotak_per_foto_median": 1.0,
+      "kotak_raksasa_persen": 12.6,
+      "foto_unik_kira2": 1124,
+      "kembar_dengan_resnap": 88,
+      "bahan_lain_tak_berlabel_di_300_foto": {
+        "mushroom": 6
+      },
+      "foto_dengan_bahan_lain_persen": 2.0
+    }
+  },
+  "rimpang_kembar_antar_dataset": {
+    "rival~soda": 11,
+    "rimpang10~soda": 3,
+    "rimpang10~rival": 81,
+    "ayush~soda": 42,
+    "ayush~rival": 48,
+    "ayush~rimpang10": 10
+  }
+}

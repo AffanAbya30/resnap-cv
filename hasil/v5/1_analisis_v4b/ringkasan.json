@@ -1,0 +1,77 @@
+{
+  "val_v4b": {
+    "P": 0.7168100397775609,
+    "R": 0.6567839075270416,
+    "mAP50": 0.6940321848058008,
+    "mAP50_95": 0.4812551058837267
+  },
+  "kelas_terlemah_AP50": {
+    "turmeric": 0.234,
+    "shrimp": 0.344,
+    "mushroom": 0.36,
+    "cauliflower": 0.373,
+    "galangal": 0.434,
+    "potato": 0.472,
+    "broccoli": 0.477,
+    "pumpkin": 0.479
+  },
+  "pasangan_tertukar_top10": [
+    [
+      "garlic",
+      "egg",
+      7
+    ],
+    [
+      "onion",
+      "eggplant",
+      5
+    ],
+    [
+      "pumpkin",
+      "cabbage",
+      5
+    ],
+    [
+      "garlic",
+      "onion",
+      4
+    ],
+    [
+      "onion",
+      "shallot",
+      3
+    ],
+    [
+      "lemongrass",
+      "green_onion",
+      3
+    ],
+    [
+      "broccoli",
+      "cabbage",
+      3
+    ],
+    [
+      "fish",
+      "eggplant",
+      2
+    ],
+    [
+      "broccoli",
+      "green_onion",
+      2
+    ],
+    [
+      "potato",
+      "cauliflower",
+      2
+    ]
+  ],
+  "recall_per_ukuran": {
+    "besar (>10%)": 0.778,
+    "kecil (<1%)": 0.619,
+    "sedang (1-10%)": 0.794
+  },
+  "kotak_tumpukan_train": 57,
+  "kotak_raksasa_train": 1390
+}

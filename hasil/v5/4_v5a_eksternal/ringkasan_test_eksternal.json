@@ -1,0 +1,59 @@
+{
+  "mAP": {
+    "v4b": {
+      "split": "val",
+      "images": 314.0,
+      "precision": 0.517,
+      "recall": 0.3813,
+      "f1": 0.4389,
+      "f1_macro": 0.4339,
+      "mAP50": 0.4148,
+      "mAP75": 0.2902,
+      "mAP50_95": 0.252
+    },
+    "v5a": {
+      "split": "val",
+      "images": 314.0,
+      "precision": 0.5072,
+      "recall": 0.4797,
+      "f1": 0.4931,
+      "f1_macro": 0.4532,
+      "mAP50": 0.4931,
+      "mAP75": 0.2943,
+      "mAP50_95": 0.2873
+    }
+  },
+  "ap50_per_kelas": {
+    "ginger": {
+      "AP50_v4b": 0.6437,
+      "AP50_v5a": 0.652,
+      "objek": 41,
+      "delta_poin": 0.83
+    },
+    "turmeric": {
+      "AP50_v4b": 0.1672,
+      "AP50_v5a": 0.2154,
+      "objek": 41,
+      "delta_poin": 4.82
+    },
+    "galangal": {
+      "AP50_v4b": 0.4335,
+      "AP50_v5a": 0.612,
+      "objek": 41,
+      "delta_poin": 17.85
+    }
+  },
+  "deteksi_palsu_foto_rempah_lain": {
+    "v4b": {
+      "foto_negatif_dengan_deteksi": 20,
+      "persen": 9.9,
+      "deteksi_palsu_total": 28
+    },
+    "v5a": {
+      "foto_negatif_dengan_deteksi": 42,
+      "persen": 20.8,
+      "deteksi_palsu_total": 473
+    }
+  },
+  "foto_rempah_lain": 202
+}

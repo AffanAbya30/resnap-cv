@@ -1,0 +1,642 @@
+{
+  "log_penyaringan": {
+    "holdout: salinan dalam kelompok": 86,
+    "holdout: kembar dengan data ReSnap": 45,
+    "eksternal: kembar dengan data ReSnap": 16,
+    "eksternal: salinan dalam kelompok": 4,
+    "train: kembar dengan data ReSnap": 495,
+    "train: kembar dengan holdout/eksternal": 786,
+    "train: Wild_turmeric (ambigu)": 480,
+    "train: salinan augmentasi": 1833,
+    "holdout: bahan lain tak berlabel": 15,
+    "eksternal: bahan lain tak berlabel": 65,
+    "train: bahan lain tak berlabel": 81
+  },
+  "jumlah": {
+    "train": {
+      "images": 6882,
+      "per_class": {
+        "tomato": {
+          "images": 148,
+          "instances": 825
+        },
+        "egg": {
+          "images": 227,
+          "instances": 1073
+        },
+        "onion": {
+          "images": 177,
+          "instances": 1446
+        },
+        "shallot": {
+          "images": 26,
+          "instances": 295
+        },
+        "garlic": {
+          "images": 127,
+          "instances": 1408
+        },
+        "chili": {
+          "images": 481,
+          "instances": 1989
+        },
+        "carrot": {
+          "images": 102,
+          "instances": 703
+        },
+        "potato": {
+          "images": 207,
+          "instances": 646
+        },
+        "cabbage": {
+          "images": 441,
+          "instances": 761
+        },
+        "broccoli": {
+          "images": 186,
+          "instances": 362
+        },
+        "cauliflower": {
+          "images": 155,
+          "instances": 308
+        },
+        "cucumber": {
+          "images": 176,
+          "instances": 572
+        },
+        "eggplant": {
+          "images": 326,
+          "instances": 623
+        },
+        "mushroom": {
+          "images": 724,
+          "instances": 1534
+        },
+        "spinach": {
+          "images": 16,
+          "instances": 16
+        },
+        "green_onion": {
+          "images": 188,
+          "instances": 225
+        },
+        "green_beans": {
+          "images": 26,
+          "instances": 38
+        },
+        "long_beans": {
+          "images": 144,
+          "instances": 144
+        },
+        "corn": {
+          "images": 129,
+          "instances": 178
+        },
+        "pumpkin": {
+          "images": 68,
+          "instances": 99
+        },
+        "lime": {
+          "images": 36,
+          "instances": 112
+        },
+        "ginger": {
+          "images": 626,
+          "instances": 776
+        },
+        "turmeric": {
+          "images": 551,
+          "instances": 843
+        },
+        "galangal": {
+          "images": 575,
+          "instances": 782
+        },
+        "lemongrass": {
+          "images": 87,
+          "instances": 123
+        },
+        "tofu": {
+          "images": 52,
+          "instances": 308
+        },
+        "tempeh": {
+          "images": 206,
+          "instances": 391
+        },
+        "chicken": {
+          "images": 284,
+          "instances": 590
+        },
+        "fish": {
+          "images": 141,
+          "instances": 164
+        },
+        "shrimp": {
+          "images": 380,
+          "instances": 1346
+        }
+      }
+    },
+    "val": {
+      "images": 1069,
+      "per_class": {
+        "tomato": {
+          "images": 32,
+          "instances": 980
+        },
+        "egg": {
+          "images": 64,
+          "instances": 908
+        },
+        "onion": {
+          "images": 50,
+          "instances": 509
+        },
+        "shallot": {
+          "images": 8,
+          "instances": 246
+        },
+        "garlic": {
+          "images": 36,
+          "instances": 196
+        },
+        "chili": {
+          "images": 152,
+          "instances": 204
+        },
+        "carrot": {
+          "images": 19,
+          "instances": 247
+        },
+        "potato": {
+          "images": 12,
+          "instances": 49
+        },
+        "cabbage": {
+          "images": 83,
+          "instances": 122
+        },
+        "broccoli": {
+          "images": 82,
+          "instances": 199
+        },
+        "cauliflower": {
+          "images": 21,
+          "instances": 70
+        },
+        "cucumber": {
+          "images": 33,
+          "instances": 87
+        },
+        "eggplant": {
+          "images": 91,
+          "instances": 100
+        },
+        "mushroom": {
+          "images": 50,
+          "instances": 138
+        },
+        "spinach": {
+          "images": 5,
+          "instances": 6
+        },
+        "green_onion": {
+          "images": 54,
+          "instances": 68
+        },
+        "green_beans": {
+          "images": 7,
+          "instances": 7
+        },
+        "long_beans": {
+          "images": 11,
+          "instances": 11
+        },
+        "corn": {
+          "images": 37,
+          "instances": 67
+        },
+        "pumpkin": {
+          "images": 3,
+          "instances": 13
+        },
+        "lime": {
+          "images": 6,
+          "instances": 17
+        },
+        "ginger": {
+          "images": 9,
+          "instances": 9
+        },
+        "turmeric": {
+          "images": 9,
+          "instances": 26
+        },
+        "galangal": {
+          "images": 9,
+          "instances": 24
+        },
+        "lemongrass": {
+          "images": 20,
+          "instances": 28
+        },
+        "tofu": {
+          "images": 15,
+          "instances": 59
+        },
+        "tempeh": {
+          "images": 56,
+          "instances": 104
+        },
+        "chicken": {
+          "images": 81,
+          "instances": 376
+        },
+        "fish": {
+          "images": 39,
+          "instances": 39
+        },
+        "shrimp": {
+          "images": 9,
+          "instances": 23
+        }
+      }
+    },
+    "holdout_oi": {
+      "images": 78,
+      "per_class": {
+        "tomato": {
+          "images": 1,
+          "instances": 5
+        },
+        "egg": {
+          "images": 0,
+          "instances": 0
+        },
+        "onion": {
+          "images": 0,
+          "instances": 0
+        },
+        "shallot": {
+          "images": 0,
+          "instances": 0
+        },
+        "garlic": {
+          "images": 0,
+          "instances": 0
+        },
+        "chili": {
+          "images": 0,
+          "instances": 0
+        },
+        "carrot": {
+          "images": 0,
+          "instances": 0
+        },
+        "potato": {
+          "images": 6,
+          "instances": 13
+        },
+        "cabbage": {
+          "images": 0,
+          "instances": 0
+        },
+        "broccoli": {
+          "images": 0,
+          "instances": 0
+        },
+        "cauliflower": {
+          "images": 0,
+          "instances": 0
+        },
+        "cucumber": {
+          "images": 0,
+          "instances": 0
+        },
+        "eggplant": {
+          "images": 0,
+          "instances": 0
+        },
+        "mushroom": {
+          "images": 35,
+          "instances": 76
+        },
+        "spinach": {
+          "images": 0,
+          "instances": 0
+        },
+        "green_onion": {
+          "images": 0,
+          "instances": 0
+        },
+        "green_beans": {
+          "images": 0,
+          "instances": 0
+        },
+        "long_beans": {
+          "images": 0,
+          "instances": 0
+        },
+        "corn": {
+          "images": 0,
+          "instances": 0
+        },
+        "pumpkin": {
+          "images": 0,
+          "instances": 0
+        },
+        "lime": {
+          "images": 0,
+          "instances": 0
+        },
+        "ginger": {
+          "images": 0,
+          "instances": 0
+        },
+        "turmeric": {
+          "images": 0,
+          "instances": 0
+        },
+        "galangal": {
+          "images": 0,
+          "instances": 0
+        },
+        "lemongrass": {
+          "images": 0,
+          "instances": 0
+        },
+        "tofu": {
+          "images": 0,
+          "instances": 0
+        },
+        "tempeh": {
+          "images": 0,
+          "instances": 0
+        },
+        "chicken": {
+          "images": 0,
+          "instances": 0
+        },
+        "fish": {
+          "images": 0,
+          "instances": 0
+        },
+        "shrimp": {
+          "images": 37,
+          "instances": 97
+        }
+      }
+    },
+    "holdout_rimpang": {
+      "images": 525,
+      "per_class": {
+        "tomato": {
+          "images": 0,
+          "instances": 0
+        },
+        "egg": {
+          "images": 0,
+          "instances": 0
+        },
+        "onion": {
+          "images": 0,
+          "instances": 0
+        },
+        "shallot": {
+          "images": 0,
+          "instances": 0
+        },
+        "garlic": {
+          "images": 0,
+          "instances": 0
+        },
+        "chili": {
+          "images": 0,
+          "instances": 0
+        },
+        "carrot": {
+          "images": 0,
+          "instances": 0
+        },
+        "potato": {
+          "images": 0,
+          "instances": 0
+        },
+        "cabbage": {
+          "images": 0,
+          "instances": 0
+        },
+        "broccoli": {
+          "images": 0,
+          "instances": 0
+        },
+        "cauliflower": {
+          "images": 0,
+          "instances": 0
+        },
+        "cucumber": {
+          "images": 0,
+          "instances": 0
+        },
+        "eggplant": {
+          "images": 0,
+          "instances": 0
+        },
+        "mushroom": {
+          "images": 0,
+          "instances": 0
+        },
+        "spinach": {
+          "images": 0,
+          "instances": 0
+        },
+        "green_onion": {
+          "images": 0,
+          "instances": 0
+        },
+        "green_beans": {
+          "images": 0,
+          "instances": 0
+        },
+        "long_beans": {
+          "images": 0,
+          "instances": 0
+        },
+        "corn": {
+          "images": 0,
+          "instances": 0
+        },
+        "pumpkin": {
+          "images": 0,
+          "instances": 0
+        },
+        "lime": {
+          "images": 0,
+          "instances": 0
+        },
+        "ginger": {
+          "images": 116,
+          "instances": 141
+        },
+        "turmeric": {
+          "images": 83,
+          "instances": 173
+        },
+        "galangal": {
+          "images": 112,
+          "instances": 151
+        },
+        "lemongrass": {
+          "images": 0,
+          "instances": 0
+        },
+        "tofu": {
+          "images": 0,
+          "instances": 0
+        },
+        "tempeh": {
+          "images": 0,
+          "instances": 0
+        },
+        "chicken": {
+          "images": 0,
+          "instances": 0
+        },
+        "fish": {
+          "images": 0,
+          "instances": 0
+        },
+        "shrimp": {
+          "images": 0,
+          "instances": 0
+        }
+      }
+    },
+    "test_eksternal_rimpang": {
+      "images": 314,
+      "per_class": {
+        "tomato": {
+          "images": 0,
+          "instances": 0
+        },
+        "egg": {
+          "images": 0,
+          "instances": 0
+        },
+        "onion": {
+          "images": 0,
+          "instances": 0
+        },
+        "shallot": {
+          "images": 0,
+          "instances": 0
+        },
+        "garlic": {
+          "images": 0,
+          "instances": 0
+        },
+        "chili": {
+          "images": 0,
+          "instances": 0
+        },
+        "carrot": {
+          "images": 0,
+          "instances": 0
+        },
+        "potato": {
+          "images": 0,
+          "instances": 0
+        },
+        "cabbage": {
+          "images": 0,
+          "instances": 0
+        },
+        "broccoli": {
+          "images": 0,
+          "instances": 0
+        },
+        "cauliflower": {
+          "images": 0,
+          "instances": 0
+        },
+        "cucumber": {
+          "images": 0,
+          "instances": 0
+        },
+        "eggplant": {
+          "images": 0,
+          "instances": 0
+        },
+        "mushroom": {
+          "images": 0,
+          "instances": 0
+        },
+        "spinach": {
+          "images": 0,
+          "instances": 0
+        },
+        "green_onion": {
+          "images": 0,
+          "instances": 0
+        },
+        "green_beans": {
+          "images": 0,
+          "instances": 0
+        },
+        "long_beans": {
+          "images": 0,
+          "instances": 0
+        },
+        "corn": {
+          "images": 0,
+          "instances": 0
+        },
+        "pumpkin": {
+          "images": 0,
+          "instances": 0
+        },
+        "lime": {
+          "images": 0,
+          "instances": 0
+        },
+        "ginger": {
+          "images": 36,
+          "instances": 41
+        },
+        "turmeric": {
+          "images": 37,
+          "instances": 41
+        },
+        "galangal": {
+          "images": 39,
+          "instances": 41
+        },
+        "lemongrass": {
+          "images": 0,
+          "instances": 0
+        },
+        "tofu": {
+          "images": 0,
+          "instances": 0
+        },
+        "tempeh": {
+          "images": 0,
+          "instances": 0
+        },
+        "chicken": {
+          "images": 0,
+          "instances": 0
+        },
+        "fish": {
+          "images": 0,
+          "instances": 0
+        },
+        "shrimp": {
+          "images": 0,
+          "instances": 0
+        }
+      }
+    }
+  }
+}

@@ -48,6 +48,22 @@ All versions are compared on the same validation set (1,069 images). The test se
 
 ![Otsu on grayscale vs saturation](docs/images/otsu_gray_vs_saturation.jpg)
 
+### After the course: model v5b
+
+The course project ended with v4b. I kept training afterwards, one change per run and with acceptance rules written before each run:
+
+- **v5a** added Roboflow photos of ginger, turmeric and galangal (which had only 35 training photos each). Rhizomes improved, but false detections on photos of other spices doubled.
+- **v5b** added a spice dataset where garlic, shallot and onion are labeled and pepper, cloves, cardamom and other spices are unlabeled negatives.
+
+| | v4b | v5b |
+|---|---|---|
+| Old test set (654 photos), mAP@0.5 | 0.694 | **0.711** |
+| Old test set, precision / recall | 0.684 / 0.650 | **0.735** / 0.643 |
+| External rhizome test (314 photos, new source), mAP@0.5 | 0.415 | **0.595** |
+| Spice photos with a false detection | 9.9% | **6.4%** |
+
+v5b passed 4 of its 5 pre-set rules: mushroom dropped 6.5 points on the Open Images holdout. It was chosen anyway, before the test sets were opened, and broccoli is weaker than in v4b. Details, data sources and all numbers are in [`MODEL_CARD_v5b.md`](MODEL_CARD_v5b.md); result files are in `hasil/v5/`. To use it, copy `models/best_v5b.pt` over `models/best.pt`.
+
 ## Run it
 
 ```bash
@@ -88,9 +104,9 @@ Run the tests with `python -m pytest tests/ -q`.
 | `app.py` | Streamlit app |
 | `resnap_pipeline.py` | one-call `scan()` / `rekomendasi()` API and CLI |
 | `scripts/` | auto-annotation, training, evaluation and ablation, ONNX export, Open Images filtering, fit diagnosis, recipe DB builder |
-| `notebooks/` | retraining (Colab/Kaggle), final test evaluation, pipeline demo, step-by-step walkthrough of the preprocessing methods |
-| `models/` | `best.pt` / `best.onnx` (v4b), `best_v3.*` (previous model) |
-| `hasil/` | ablation results |
+| `notebooks/` | retraining (Colab/Kaggle), final test evaluation, pipeline demo, step-by-step walkthrough of the preprocessing methods, v5 notebooks (error analysis to final evaluation) |
+| `models/` | `best.pt` / `best.onnx` (v4b, used in the course report), `best_v5b.pt` / `best_v5b.onnx` (newer model, see model card), `best_v3.*` (previous model) |
+| `hasil/` | ablation results; `hasil/v5/` error analysis and v5 training/evaluation results |
 
 ## Limitations
 
@@ -108,6 +124,7 @@ Run the tests with `python -m pytest tests/ -q`.
 ## Credits
 
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics), OpenCV, Streamlit
+- Detection data (Roboflow Universe): [food-ingredients-dataset](https://universe.roboflow.com/food-recipe-ingredient-images-0gnku/food-ingredients-dataset) (CC BY 4.0), [food-ingrediant-zenm1](https://universe.roboflow.com/-zvl1l/food-ingrediant-zenm1) (CC BY 4.0), [new_dataset-4cjn9](https://universe.roboflow.com/ppb-b1cql/new_dataset-4cjn9) (Public Domain), [ingridients-n4i2y](https://universe.roboflow.com/ingridients/ingridients-n4i2y) (CC BY 4.0); v5 additions and external test are listed in the model card
 - [Open Images V7](https://storage.googleapis.com/openimages/web/index.html) (CC BY 4.0), downloaded with FiftyOne
 - [Indonesian Food Recipes Dataset](https://www.kaggle.com/datasets/albertnathaniel12/food-recipes-dataset) (Cookpad recipes, via Kaggle)
 - Example photos from Wikimedia Commons, see `contoh/KREDIT_FOTO.md`
